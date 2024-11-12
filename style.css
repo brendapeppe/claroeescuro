@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.site1{
+    padding: 7px;
+    border-radius: 20px;
+    background-color: #11185f;
+    color: #c6e3f5;
+    list-style-type: none;
+    margin-top: 15px;
+    margin-bottom: 0;
+
+}
+a{
+    color: #c6e3f5;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.site1:active{
+    background-color: rgb(148, 183, 248);
+    color: #00101a;
+}
+.site1:visited{
+    background-color: aqua;
+    color: brown;
+}
+.site1:hover{
+    background-color: #000000;   
+    cursor: pointer;
+}
+
+body {
+    background-color: #c6e3f5;
+    color: #000429;
+    transition: background-color 0.3s ease-in-out, color 0.3 ease-in-out;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #264e8393;
+    padding: 20px;
+}
+
+header button {
+    background-color: aliceblue;
+    color: #000429;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section {
+    padding: auto 20px;
+    margin: 20px auto;
+    height: 60vh;
+    width: 50%;
+}
+
+#sobre div {
+    width: 50%;
+}
+
+#sobre img {
+    height: 400px;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.text{
+    font-size: 18px;
+    text-align: center;
+    margin-left: -40px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 4em;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 40px;
+}
+.texto{
+    font-size: 55px;
+}
+h3 {
+    margin-bottom: 20px;
+    font-size: 2.0em;
+    justify-content: center;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+p{
+    width: 100%;
+}
+.projeto{
+    background-color: #7ba9c5b4;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+/* -------Modo Escuro------ */
+
+.dark-mode{
+    background-color: #11185f;
+    color: rgb(110, 111, 121);
+}
+
+.dark-mode header{
+    background-color: #1f2346;
+}
+
+.dark-mode header button{
+    background-color: #000429;
+    color: aliceblue;
+}
+
+.dark-mode .projeto{
+    background-color: #01041dda;
+}
+
+@media (max-width:480px) {
+    h2{
+        font-size: 40px;
+        width: 200%;
+        margin-left: -50px;
+        
+    }
+    #sobre{
+        margin: 10%;
+        margin-top: 0;
+        margin-bottom: 0;
+        flex-direction: column-reverse;
+        
+    }
+    p{
+        font-size: 18px;
+        text-align: center;
+        font-weight: 550;
+    }
+    .text{
+        font-size: 17px;
+        /* text-align: center; */
+        width: 250px;
+        margin-left: -45px;
+        
+        
+    }
+    #sobre img{
+        height: 300px;
+        margin-left: 25px;
+        
+    }
+    .projetos{
+        margin-top: 0;
+    }
+
+    
+
+    h3{
+        font-size: 35px;
+        text-align: center;
+    }
+
+   
+    
+}
